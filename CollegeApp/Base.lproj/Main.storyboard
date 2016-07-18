@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YNs-Q4-0b1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="1gK-6E-V4f">
+            <objects>
+                <navigationController id="gMI-fI-I8I" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aId-JK-XqU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Wr-fp-dp6" kind="relationship" relationship="rootViewController" id="cVP-Bw-nfi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUI-8V-dHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-1344"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="s0x-gb-NuA">
+            <objects>
+                <viewController id="1Wr-fp-dp6" customClass="RegisterViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mr1-fA-2PV"/>
+                        <viewControllerLayoutGuide type="bottom" id="c5Z-zY-kg8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k6E-Pb-4c2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XXl-8r-Mf8"/>
+                    <connections>
+                        <segue destination="4Ix-Ko-e5J" kind="show" identifier="showGradesRegister" id="wQy-fT-VD8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5SB-gh-3o6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="-1344"/>
+        </scene>
+        <!--Grades Register View Controller-->
+        <scene sceneID="YFO-K8-z4I">
+            <objects>
+                <viewController id="4Ix-Ko-e5J" customClass="GradesRegisterViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1C7-aX-Y9d"/>
+                        <viewControllerLayoutGuide type="bottom" id="gLw-qz-6Ak"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Gg-iK-Lev">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="otJ-oq-gva" kind="show" identifier="showFavorites" id="bdB-uR-CQW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FP2-IQ-MSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2251" y="-1344"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="5Hf-iw-vGa">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="a9g-Ri-OTD" customClass="LoginViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EBL-El-OLZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="2nn-Bp-bal"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yUj-Ac-Afs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bMq-nU-of9"/>
+                    <connections>
+                        <segue destination="W7m-F7-xef" kind="show" identifier="showFeed" id="JVf-HT-MeU"/>
+                        <segue destination="gMI-fI-I8I" kind="show" identifier="showRegister" id="koI-Ih-lcp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5Z-y8-tpn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133" y="294"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AjJ-KQ-wNc">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="YNs-Q4-0b1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y86-2M-tNI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="a9g-Ri-OTD" kind="relationship" relationship="rootViewController" id="kPZ-VI-W6v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ism-QM-iQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-843" y="294"/>
+        </scene>
+        <!--College Feed-->
+        <scene sceneID="Cub-vQ-jE3">
+            <objects>
+                <tableViewController id="GRH-Wa-c4t" customClass="MasterViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dF0-2j-f7K">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="110" id="07Z-Ie-zUq" customClass="CustomCell" customModule="CollegeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="600" height="110"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="07Z-Ie-zUq" id="fJA-gp-IPo">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="NNQ-Wc-8kg" kind="show" identifier="showDetail" id="NI0-sd-LBe"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GRH-Wa-c4t" id="lfm-HV-bIn"/>
+                            <outlet property="delegate" destination="GRH-Wa-c4t" id="lEL-9D-MGX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="College Feed" id="3dC-cv-Wtw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cej-1O-EGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2237" y="-436"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Xp8-6a-mMj">
+            <objects>
+                <viewController id="NNQ-Wc-8kg" customClass="DetailViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M0u-LJ-xh9"/>
+                        <viewControllerLayoutGuide type="bottom" id="yhd-ro-Zvz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pbi-IY-PD6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XgZ-id-OaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3003" y="-436"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="mK2-kq-RZI">
+            <objects>
+                <viewController id="YDY-bL-kNj" customClass="DetailViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hnj-L1-tPx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cad-3D-u1n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M3O-gx-dPH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qom-to-G5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3765" y="294"/>
+        </scene>
+        <!--Add College-->
+        <scene sceneID="Ucs-AX-vX9">
+            <objects>
+                <tableViewController id="VCx-e1-27F" customClass="CollegesTableViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="flg-SB-yOp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="iy2-wk-WGy">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iy2-wk-WGy" id="vyq-qc-QJx">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VCx-e1-27F" id="dGn-tv-bdS"/>
+                            <outlet property="delegate" destination="VCx-e1-27F" id="fQs-ra-fGN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add College" id="fz9-bj-ulN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EiV-zt-n6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3071" y="-2170"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MBP-HX-XcK">
+            <objects>
+                <navigationController id="WIo-Rb-TNv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hEh-uR-H1C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VCx-e1-27F" kind="relationship" relationship="rootViewController" id="7CA-33-kCx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NT7-xO-w7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2251" y="-2170"/>
+        </scene>
+        <!--All Colleges-->
+        <scene sceneID="jSC-3W-cuz">
+            <objects>
+                <tableViewController id="otJ-oq-gva" customClass="FavoritesRegisterTableViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QRF-FJ-oK1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="110" id="xun-QL-G0e" customClass="CustomCollegeCell" customModule="CollegeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="600" height="110"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xun-QL-G0e" id="ulV-X7-ZyF">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="otJ-oq-gva" id="d8u-H1-Dqc"/>
+                            <outlet property="delegate" destination="otJ-oq-gva" id="OON-Se-p3B"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="All Colleges" id="obc-5T-gZ8"/>
+                    <connections>
+                        <segue destination="WIo-Rb-TNv" kind="presentation" identifier="showColleges" id="Ivx-fV-9p2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3Q-50-nND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3063" y="-1344"/>
+        </scene>
+        <!--College Feed-->
+        <scene sceneID="N05-p3-HOY">
+            <objects>
+                <navigationController id="SeR-Hk-QJi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="College Feed" id="kkc-6k-dYy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Srz-d6-FmQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GRH-Wa-c4t" kind="relationship" relationship="rootViewController" id="W9X-Nc-hzd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Lk-mF-z4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="-436"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SQk-9Z-4Ml">
+            <objects>
+                <tabBarController id="W7m-F7-xef" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="AWI-Pm-7i6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SeR-Hk-QJi" kind="relationship" relationship="viewControllers" id="HQN-cK-ddn"/>
+                        <segue destination="D11-qk-Qb6" kind="relationship" relationship="viewControllers" id="dbv-4F-fu4"/>
+                        <segue destination="0Jk-08-hWW" kind="relationship" relationship="viewControllers" id="WAR-9r-FuT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tn9-aO-RIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="294"/>
+        </scene>
+        <!--My Profile-->
+        <scene sceneID="fgH-jH-xoT">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="0Jk-08-hWW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Profile" id="E6a-K8-r1n"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jdp-fW-thV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TkW-yw-moK" kind="relationship" relationship="rootViewController" id="Jzt-Hi-aR9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ba5-SH-SSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="1724"/>
+        </scene>
+        <!--Favorite Colleges-->
+        <scene sceneID="z6y-kk-8QO">
+            <objects>
+                <tableViewController id="kpb-TZ-rdC" customClass="FilterViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="d5f-75-9fe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="110" id="2Io-it-Yg6" customClass="CustomCollegeCell" customModule="CollegeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="600" height="110"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Io-it-Yg6" id="tUB-zo-zaE">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="AaQ-dl-j2j" kind="show" identifier="showFilteredDetail" id="MdA-ce-vqx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kpb-TZ-rdC" id="6kd-Co-VK6"/>
+                            <outlet property="delegate" destination="kpb-TZ-rdC" id="lwx-Pc-Aet"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorite Colleges" id="f8c-CO-c1y">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4Fw-tH-pEM"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mP7-1w-xcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarItem title="Item" id="UJM-SW-4YS"/>
+            </objects>
+            <point key="canvasLocation" x="2225" y="293"/>
+        </scene>
+        <!--Favorite Colleges-->
+        <scene sceneID="qat-7y-Dwo">
+            <objects>
+                <navigationController id="D11-qk-Qb6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorite Colleges" id="t8n-x1-4r6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nTm-09-ifz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kpb-TZ-rdC" kind="relationship" relationship="rootViewController" id="SsD-i8-mkG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ff0-Wj-6dV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="293"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="tkQ-Pd-rgh">
+            <objects>
+                <viewController id="TkW-yw-moK" customClass="ProfileViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2fb-Th-gy1"/>
+                        <viewControllerLayoutGuide type="bottom" id="XGg-m2-NoF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oja-a6-fhA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WXj-Tw-2do"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbV-oV-zyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2225" y="1724"/>
+        </scene>
+        <!--College Feed-->
+        <scene sceneID="Sin-BY-g25">
+            <objects>
+                <tableViewController id="AaQ-dl-j2j" customClass="FilteredResultsTableViewController" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PAu-T3-i5n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="110" id="9UA-QK-Cv9" customClass="CustomCell" customModule="CollegeApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="600" height="110"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9UA-QK-Cv9" id="PJo-Tq-xnq">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="YDY-bL-kNj" kind="show" identifier="showDetail" id="6X5-5d-htL"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AaQ-dl-j2j" id="plY-ny-nnp"/>
+                            <outlet property="delegate" destination="AaQ-dl-j2j" id="qyq-vA-WCJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="College Feed" id="Pji-CX-K6A">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="adN-mP-8f4">
+                            <connections>
+                                <segue destination="55K-2N-r0g" kind="presentation" id="5Fs-SM-bdt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nj9-8p-0hb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3003" y="294"/>
+        </scene>
+        <!--Filter View-->
+        <scene sceneID="h4x-Uv-JuO">
+            <objects>
+                <viewController storyboardIdentifier="showFilter" id="55K-2N-r0g" customClass="FilterView" customModule="CollegeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rxm-jy-jKg"/>
+                        <viewControllerLayoutGuide type="bottom" id="1fO-rx-zCj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dt1-81-T6b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZZ-nV-59u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3003" y="1048"/>
+        </scene>
+    </scenes>
+</document>
